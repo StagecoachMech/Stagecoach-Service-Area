@@ -1,28 +1,33 @@
 {
-  "@context": "http://iiif.io/api/presentation/2/context.json",
-  "@type": "sc:Manifest",
-  "label": "Colorado Territory Map (1862)",
-  "sequences": [
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://stagecoachmech.github.io/Stagecoach-Service-Area/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "en": ["Colorado Territory Map (1862)"]
+  },
+  "items": [
     {
-      "@type": "sc:Sequence",
-      "canvases": [
+      "id": "https://stagecoachmech.github.io/Stagecoach-Service-Area/canvas",
+      "type": "Canvas",
+      "height": 10305,
+      "width": 13993,
+      "items": [
         {
-          "@type": "sc:Canvas",
-          "label": "Map",
-          "height": 10305,
-          "width": 13993,
-          "images": [
+          "id": "https://stagecoachmech.github.io/Stagecoach-Service-Area/page",
+          "type": "AnnotationPage",
+          "items": [
             {
-              "@type": "oa:Annotation",
-              "motivation": "sc:painting",
-              "resource": {
-                "@type": "dctypes:Image",
+              "id": "https://stagecoachmech.github.io/Stagecoach-Service-Area/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://stagecoachmech.github.io/Stagecoach-Service-Area/canvas",
+              "body": {
+                "id": "https://stagecoachmech.github.io/Stagecoach-Service-Area/ColoradoTerritory-case-1862-HIGHRES.tif",
+                "type": "Image",
                 "format": "image/tiff",
                 "height": 10305,
-                "width": 13993,
-                "@id": "https://stagecoachmech.github.io/Stagecoach-Service-Area/ColoradoTerritory-case-1862-HIGHRES.tif"
-              },
-              "on": "https://stagecoachmech.github.io/Stagecoach-Service-Area/canvas"
+                "width": 13993
+              }
             }
           ]
         }
